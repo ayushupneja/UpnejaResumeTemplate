@@ -3,5 +3,5 @@
 You can plug the .tex into LaTeX using Overleaf and change all the information. Here's what it looks like:
 
 
-![ResumePreview](ResumePreview.png)
+![ResumePreview](resume.png)
 
