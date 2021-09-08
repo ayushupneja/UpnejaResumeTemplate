@@ -28,7 +28,7 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-0.9in}
 \addtolength{\textheight}{1.0in}
-\usepackage[margin=0.35in]{geometry}
+\usepackage[margin=0.3in]{geometry}
 
 \urlstyle{same}
 
@@ -72,20 +72,33 @@
 
 \begin{document}
 
+
+%-----------Awards etc-----------------
+% \section{Awards}
+%   \resumeItemListStart
+%         \resumeItem{\small DappHero Winner @ ETHLondonUK: }{\hspace{0.9mm} Mar. \hspace{-0.3mm}2020 \hfill \textbf{2nd Place @ JP Morgan Code for Good: }\ \ \hspace{3mm} Oct. 2019}
+%         \resumeItem{\small Battlecode Top 16 US @ MIT: }{\hspace{15.9mm}Jan. \hspace{0.4mm}2020 \hfill \textbf{1st Place @ Sonos Challenge: }\hspace{6mm}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Oct. 2019}
+%         \resumeItem{\small \$12,000 Grand Prize @ Capitol Royale: }{Nov. 2019 \hfill \textbf{Best Data Usability Award @ PennApps: }\ \ \ \ \ Sep. 2019}
+%         \resumeItem{\small Best Financial Hack @ HackHarvard: }{\ \ \ Oct. \hspace{0.4mm}2019 \hfill \textbf{Grand Prize @ Google \& NCAA Hackathon: }Feb. 2019}
+%       \resumeItemListEnd
+
 %----------HEADING-----------------
 \vspace*{-10pt}
 \begin{center}
 	{\Huge \scshape {Ayush Upneja}}\\
-    \faGlobe \ US Citizen $|$ \faPhone \ (814) 574-5900 $|$ \faEnvelope \ upneja@bu.edu $|$ \faLinkedinSquare \ ayush-upneja $|$ \faGithub \ ayushupneja \\
+    \faGlobe \ US Citizen $|$ \faPhone \ (814) 574-5900 $|$ \faEnvelope \ aaupneja@gmail.com $|$ \faLinkedinSquare \ upneja $|$ \faGithub \ ayushupneja \\
 \end{center}
-\vspace{-6mm}
+\vspace{-8mm}
 %-----------EDUCATION-----------------
 \section{Education}
 
     \resumeSubheading
-      {Boston University College of Engineering}{Boston, MA}
-      {Senior, BS Computer Engineering $|$ Dean's List $|$ \textit{GPA: 3.56}}{Sept. 2017 -- Expected May. 2021}
-  
+      {Boston University}{Boston, MA}
+      {BS Computer Engineering $|$ Cum Laude $|$ \textit{GPA: 3.54/4}}{Sep. 2017 --  May 2021} \\
+      \vspace{2mm}
+      \small \textbf{Awards:} Best ECE Senior Design Project, 1st Place @ Google \& NCAA Hackathon, Top 16 US MIT Battlecode \\
+      \small \textbf{Teaching Assistant for:} Applied Algorithms, Software Design, Enterprise Client-Server Software System Design
+  \vspace{-2mm}
   
 %-----------Work & Research--------------
 \setlength{\itemindent}{5mm}
@@ -93,110 +106,123 @@
 \section{Experience}
   \resumeSubHeadingListStart
    \resumeSubheading
-      {\small Amazon}{\small Seattle, WA (Remote)}
-       {\small Software Development Engineering Intern}{\small May. 2020 -- Present}
+      {\small Blend}{\small New York, NY}
+       {\small Software Engineer - Personal Loans Platform}{\small Jun. 2021 -- Present}
         {\begin{itemize}
-            \small \vspace{-1mm} \item Developing a targeting criteria creation and evaluation portal for Alexa Shopping Hints as the end to end project owner.
-            \small \item Designing database schema (DynamoDB), building back-end APIs (Guice), and writing unit-tests (Cucumber).
+            \small \item Architecting Wells Fargo Borrower experience from scratch, including building workflow and integrating decision logic
+            \small \item Created features for Lender UI Service, including validations \& configurable components using Typescript and Node.js
+            \small \item Overhauling testing infrastructure to remove snapshot bloat, replace synchronous tests, and replacing mocks with stubs to change unnecessary integration tests to valid unit tests, increasing testing speed by 40\%
         \end{itemize}}
         \vspace{-2.5mm}
-    \resumeSubheading
-      {\small Reflexis Systems}{\small Dedham, MA}
-       {\small Software Engineering Intern}{\small Jun. 2019 -- Aug. 2019}
-       {\begin{itemize}
-            \small\vspace{-1mm} \item Worked with IBM's Cognos SQL business intelligence suite to conduct predictive analysis for retail clients.
+   \resumeSubheading
+      {\small Amazon}{\small Seattle, WA (Remote)}
+       {\small Software Development Engineering Intern - Adaptive Content and Suggestions Team}{\small May. 2020 -- Aug. 2020}
+        {\begin{itemize}
+            \small \item Developed a robust end to end portal that enables feature owners to configure and evaluate targeting criteria based on intent, slots, and logical directives invoked by the shopping speechlet at the end of a successful dialogue
+            \small \item Built backend API with Java/Spring supporting CRUD operations for each expression and relevant Cucumber unit tests
+            \small \item Stored criteria expressions \& test results in DynamoDB, and built front-end portal for feature owners with Handelbars.js
+            \small \item Provided validation testing as a prerequisite for updating/saving targeting criteria, saving 15 dev hours / week
         \end{itemize}}
         \vspace{-2.5mm}
+    % \resumeSubheading
+    %   {\small Reflexis Systems}{\small Dedham, MA}
+    %   {\small Software Engineering Intern}{\small Jun. 2019 -- Aug. 2019}
+    %   {\begin{itemize}
+    %         \small\vspace{-1mm} \item Worked with IBM's Cognos SQL business intelligence suite to conduct predictive analysis for retail clients.
+    %     \end{itemize}}
+    %     \vspace{-2.5mm}
     \resumeSubheading
       {\small Google Cloud}{\small Boston, MA}
-       {\small Student Developer Fellow}{\small Feb. 2019 -- Apr. 2019}
+       {\small Student Developer Fellow - Data Engineer Intern}{\small Feb. 2019 -- Apr. 2019}
        {\begin{itemize}
-            \small\vspace{-1mm} \item Utilized machine learning and data visualization to quantitatively model "Explosiveness" for NCAA March Madness.
-            \small \item Published and aired four real-time predictions on national TV, regarding possessions, offensive rebounds, assists, etc.
+            \small\vspace{0mm} \item Selected as 1 of 30 undergraduates to create prediction models for 2019 NCAA March Madness Tournament
+            \small \item Utilized machine learning and data visualization to quantitatively model real-time team "Explosiveness" on Google Colab
+            \small \item Participated in Google Cloud commercials, which aired during Final Four/championship games to $>$100 million viewers and displayed our predictions (within 75\% accuracy) for lead changes, 3-pointers, and possessions
+            \small\item Represented Google at Google Cloud Next '19 (35,000 attendees), presented our work to other vendors and customers
         \end{itemize}}
         \vspace{-2.5mm}
 
     \resumeSubheading
       {\small GE Aviation}{\small Cincinnati, OH}
-      {\small Assembly and Test Software Engineering Intern}{\small May 2018 - Aug. 2018}
+      {\small Software Engineering Intern}{\small May 2018 - Aug. 2018}
       {\begin{itemize}
-            \small\vspace{-1mm} \item Created cloud based vector calculator with Visual Basic and HTML. Used by over 500 Assembly Engineers.
-            \small \item Developed predictive failure response tool, saving hundreds of  waiting hours every week due to recurring faults.
+            \small\vspace{0mm} \item Created cloud based vector calculator with Visual Basic and HTML. Used by over 500 Assembly Engineers
+            \small \item Developed predictive engine failure response tool, saving hundreds of  waiting hours every week due to recurring faults
+            \small \item Automated ATD data pulling and plotting for entire Test Engineering team saving 10 dev hours / week
         \end{itemize}}
         \vspace{-2.5mm}
 
 
   \resumeSubHeadingListEnd
   \vspace{-4mm}  
-  
+  %--------PROGRAMMING SKILLS------------
+\section{Relevant Skills}
+    \small{
+    \resumeItemListStart
+        \resumeItem{\small Languages: }
+           { \small \ \ \ \  \ \  \ \ \  \ \   \ \ \  \ \  \ \ \  \ \  \ Python \textbar \ Typescript \textbar \ C++\textbar \  C \textbar \  C\# \textbar \ Java \textbar \  Matlab \textbar \  SQL \textbar \  Javascript \textbar \  HTML/CSS}
+        \resumeItem{\small Frameworks/Technologies: }
+          {\small Django \textbar \  Flask \textbar \  Git \textbar \  Node \textbar \  React \textbar \  Angular \textbar \  Latex \textbar \  ASP.Net \textbar \  Cucumber \textbar \  Arduino}
+        \resumeItem{\small Relevant Coursework:     }
+          {\small  \ \ \ \  \ \  \  Applied Algorithms \textbar \ Probability \textbar \ Linear Algebra \textbar \ Cloud Computing \textbar \ Machine Learning}
+      \resumeItemListEnd
+     }
+     \vspace{-3mm}
 %----------Projects----------------------
 \setlength{\itemindent}{5mm}
 \section{Projects}
     \resumeItemListStart
-        \resumeItem{\small Bare Metal Marketplace \normalfont{[Flask, SQLAlchemy, Python]}}\hfill\textit{\small May. 2020}
-        {\begin{itemize}
-        \vspace{-1.7mm}
-        \small \item Built a marketplace where users can rent and sell bare metal machines in EC528 Cloud Computing.
-        \small \item Designed and built the auction engine and double-blind algorithm that matches up bids and offers.
-        \vspace{-1.7mm}
-        \end{itemize}}
+        % \resumeItem{\small Bare Metal Marketplace \normalfont{[Flask, SQLAlchemy, Python]}}\hfill\textit{\small May. 2020}
+        % {\begin{itemize}
+        % \vspace{-1.7mm}
+        % \small \item Built a marketplace where users can rent and sell bare metal machines in EC528 Cloud Computing.
+        % \small \item Designed and built the auction engine and double-blind algorithm that matches up bids and offers.
+        % \vspace{-1.7mm}
+        % \end{itemize}}
         \resumeItem{\small Autonomous Vehicle: IOT Final Project \normalfont{[C, Node.js, Jquery, Raspberry Pi]}}\hfill\textit{\small Dec. 2019}
         {\begin{itemize}
         \vspace{-1.7mm}
-        \item \small Built an autonomous vehicle controlled by a web client through live video streamed with a Raspberry Pi. 
+        \item \small Built an autonomous vehicle controlled by a web client through live video streamed with a Raspberry Pi
         \small \item Can travel any course with stop and start signals from infrared beacons and decode a QR code "flag" at end.
         \vspace{-1.7mm}
         \end{itemize}}
         \resumeItem{\small Stardust: \$12,000 Grand Prize Winner @ Capitol Royale  \normalfont{[Django, React-Native, Swift, SDL]}}\hfill\textit{\small Nov. 2019}
         {\begin{itemize}
         \vspace{-1.7mm}
-            \item \small Built an AI Radio DJ that books parking \& tickets, and curates music through sentiment analysis and location.
-            \small \item Assembled application directly into Ford center display with a companion mobile interface for passengers.
+            \item \small Built an AI Radio DJ that books parking \& tickets, and curates music through sentiment analysis and location
+            \small \item Assembled application directly into Ford center display with a companion mobile interface for passengers
         \end{itemize}}
         \vspace{-1.7mm}
-     \resumeItem{\small Bikeable: Best Data Usability Award @ PennApps \normalfont{[Flask, GAE, Leaflet.js, Firebase, NumPy, jQuery, SQL]}}\hfill\textit{\small Sep. 2019}
+     \resumeItem{\small Bikeable: Best Data Usability Award @ PennApps \normalfont{[Flask, GAE, Leaflet.js, Firebase, NumPy, SQL]}}\hfill\textit{\small Sep. 2019}
         {\begin{itemize}
         \vspace{-1.7mm}
-            \item \small Created web application that generates safe bike paths in Boston from empirical  accident data with routing algorithm.
-            \small \item Applied heatmap visualizations using Kernel Density Estimation of theft data to denote danger hotspots for parking.
+            \item \small Created web application that generates safe bike paths in Boston from empirical  accident data with routing algorithm
+            \small \item Applied heatmap visualizations using Kernel Density Estimation of theft data to denote danger hotspots for parking
         \vspace{-1.7mm}
         \end{itemize}}
 
 
       \resumeItemListEnd
       \vspace{-2mm}
-%--------PROGRAMMING SKILLS------------
-\section{Relevant Skills}
-    \small{
-    \resumeItemListStart
-        \resumeItem{\small Languages: }
-           { \small \ \ \ \  \ \  \ \ \  \ \   \ \ \  \ \  \ \ \  \ \  \ Python \textbar \  C++\textbar \  C \textbar \  Java \textbar \  Matlab \textbar \  SQL \textbar \  Javascript \textbar \  HTML/CSS}
-        \resumeItem{\small Frameworks/Technologies: }
-          {\small Django \textbar \  Flask \textbar \  ASP.Net \textbar \  Guice \textbar \  React \textbar \  React-Native \textbar \  Latex \textbar \  Git \textbar \  Cucumber \textbar \  Arduino}
-        \resumeItem{\small Relevant Coursework:     }
-          {\small  \ \ \ \  \ \  \  Applied Algorithms \textbar \ Probability \textbar \ Linear Algebra \textbar \ Cloud Computing \textbar \ Machine Learning}
-      \resumeItemListEnd
-     }
-     \vspace{-3mm}
 %-----------Clubs etc-----------------
 \section{Leadership}
    \resumeItemListStart
         \resumeItem{\small College of Engineering Student Body President}
-           { \small Manage \$20,000 budget to plan college-wide events for 1800 students.}
+           { \small Managed \$20,000 budget to plan college-wide events for 1800 students}
         \resumeItem{\small Dean's Host \& Lead Engineering Ambassador}
-          { \small \ \ \hspace{0.6mm}Lead prospective student events and give engaging tours to families.}
-          \resumeItem{\small Applied Algorithms Teaching Assistant}
-          {\small \ \ \ \ \ \ \ \ \ \ \ \ \ \ \hspace{0.1mm} Hold weekly office hours and grade homeworks/exams for 83 students.}
+          { \small \ \ \hspace{0.6mm}Led prospective student events and gave engaging tours to families}
+        %   \resumeItem{\small Applied Algorithms Teaching Assistant}
+        %   {\small \ \ \ \ \ \ \ \ \ \ \ \ \hspace{0.3mm} Hold weekly office hours and grade homeworks/exams for 83 students.}
       \resumeItemListEnd
       
       
-     \vspace{-3mm}
+     \vspace{5mm}
 %-----------Awards etc-----------------
-\section{Awards}
-   \resumeItemListStart
-        \resumeItem{\small DappHero Winner @ ETHLondonUK: }{\hspace{0.9mm} Mar. \hspace{-0.3mm}2020 \hfill \textbf{2nd Place @ JP Morgan Code for Good: }\ \ \hspace{3mm} Oct. 2019}
-        \resumeItem{\small Battlecode Top 16 US @ MIT: }{\hspace{15.9mm}Jan. \hspace{0.4mm}2020 \hfill \textbf{1st Place @ Sonos Challenge: }\hspace{6mm}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Oct. 2019}
-        \resumeItem{\small \$12,000 Grand Prize @ Capitol Royale: }{Nov. 2019 \hfill \textbf{Best Data Usability Award @ PennApps: }\ \ \ \ \ Sep. 2019}
-        \resumeItem{\small Best Financial Hack @ HackHarvard: }{\ \ \ Oct. \hspace{0.4mm}2019 \hfill \textbf{Grand Prize @ Google \& NCAA Hackathon: }Feb. 2019}
-      \resumeItemListEnd
+% \section{Awards}
+%   \resumeItemListStart
+%         \resumeItem{\small DappHero Winner @ ETHLondonUK: }{\hspace{0.9mm} Mar. \hspace{-0.3mm}2020 \hfill \textbf{2nd Place @ JP Morgan Code for Good: }\ \ \hspace{3mm} Oct. 2019}
+%         \resumeItem{\small Battlecode Top 16 US @ MIT: }{\hspace{15.9mm}Jan. \hspace{0.4mm}2020 \hfill \textbf{1st Place @ Sonos Challenge: }\hspace{6mm}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Oct. 2019}
+%         \resumeItem{\small \$12,000 Grand Prize @ Capitol Royale: }{Nov. 2019 \hfill \textbf{Best Data Usability Award @ PennApps: }\ \ \ \ \ Sep. 2019}
+%         \resumeItem{\small Best Financial Hack @ HackHarvard: }{\ \ \ Oct. \hspace{0.4mm}2019 \hfill \textbf{Grand Prize @ Google \& NCAA Hackathon: }Feb. 2019}
+%       \resumeItemListEnd
 \end{document}
